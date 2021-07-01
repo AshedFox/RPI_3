@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Title</title>
+</head>
+<body>
+<div id="wrapper">
+    <svg id="prev-bg" xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" onclick="setPrevBackground()">
+        <path d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"/>
+    </svg>
+    <svg id="next-bg" xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" onclick="setNextBackground()">
+        <path d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"/>
+    </svg>
+    <div id="weather-container">
+        <img src="" alt="weather-icon" id="weather-icon">
+        <h2 class="weather-info">
+            <div id="weather-state"></div>
+            <div id="temperature"></div>
+        </h2>
+    </div>
+    <main class="main" spellcheck="false">
+        <div class="datetime">
+            <time id="time"></time>
+            <time id="date"></time>
+        </div>
+        <h1 class="welcome-container">
+            <div id="welcome"></div>
+            <div id="name" contenteditable="true"></div>
+        </h1>
+        <h2 id="goal-answer"></h2>
+        <h2 id="goal" contenteditable="true"></h2>
+    </main>
+    <h2 class="quote-container">
+        <div id="quote"></div>
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24" id="next-quote" onclick="getQuote()">
+                <path d="M13 18v-4h-7v-4h7v-4l6 6-6 6zm-1-16c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12z"/>
+            </svg>
+        </div>
+    </h2>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
